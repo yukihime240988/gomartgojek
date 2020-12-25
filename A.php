@@ -52,7 +52,6 @@ echo "\n";
 echo "\e[1;37m shoot    \n";
 echo "\e[32;1m▬▬▬▬▬▬▬▬▬▬\e[31;1m ( subscribe YouTube Dzainvina $input)\e[32;1m ▬▬▬▬▬▬▬▬▬\n";
 // function change(){
-        $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("green","📲▶️ Nomor : ");
         // $no = trim(fgets(STDIN));
@@ -192,7 +191,7 @@ echo "\e[32;1m▬▬▬▬▬▬▬▬▬▬\e[31;1m ( subscribe YouTube Dzainvi
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
          echo color("Blue","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN GOPAY = 121212 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"121212"}';
+         $data2 = '{"pin":"000000"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "OTP PIN 6 digit : ";
          $otpsetpin = trim(fgets(STDIN));
